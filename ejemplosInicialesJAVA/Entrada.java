@@ -4,31 +4,31 @@ import java.io.*;
 
 public class Entrada {
 	static String inicializar(){
-			String buzon="";
+			String buzonModificado="";
 			InputStreamReader flujo=new InputStreamReader(System.in);
 			BufferedReader teclado=new BufferedReader(flujo);
 			try{
-				buzon=teclado.readLine();
+				buzonModificado=teclado.readLine();
 			}
 			catch(Exception e){
 				System.out.append("Entrada incorrecta)");
 			}
-			return buzon;
+			return buzonModificado;
 	}
 static int entero(){
-	int valor=Integer.parseInt(inicializar());
-	return valor;
+	int valorModificado=Integer.parseInt(inicializar());
+	return valorModificado;
 	}
 static double real(){
-	double valor=Double.parseDouble(inicializar());
-	return valor;
+	double valorModificado=Double.parseDouble(inicializar());
+	return valorModificado;
 	}
 static String cadena(){
-	String valor=inicializar();
-	return valor;
+	String valorModificado=inicializar();
+	return valorModificado;
 	}
 static char caracter(){
-	String valor=inicializar();
-	return valor.charAt(0);
+	String valorModificado=inicializar();
+	return valorModificado.charAt(0);
 	}
 }
